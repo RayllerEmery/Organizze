@@ -34,8 +34,6 @@ public class DespesasActivity extends AppCompatActivity {
     private TextInputEditText campoCategoria;
     private TextInputEditText campoDescricao;
     private EditText campoValor;
-
-    private Movimentacao movimentacao;
     private DatabaseReference reference = ConfiguracaoFirebase.getFirebaseDatabase();
     private FirebaseAuth auth = ConfiguracaoFirebase.getFirebaseAutenticacao();
     private Double despesaTotal;
@@ -66,7 +64,7 @@ public class DespesasActivity extends AppCompatActivity {
             if(validarCampos()) {
                 String data = campoData.getText().toString();
 
-                movimentacao = new Movimentacao();
+                Movimentacao movimentacao = new Movimentacao();
                 Double valorRecuperado = Double.parseDouble(campoValor.getText().toString());
                 movimentacao.setValor(valorRecuperado);
                 movimentacao.setCategoria(campoCategoria.getText().toString());
@@ -77,8 +75,12 @@ public class DespesasActivity extends AppCompatActivity {
                 Double despesaAtualizada = despesaTotal + valorRecuperado;
                 atualizarDespesa(despesaAtualizada);
 
-
-                finish();
+                try{
+                    movimentacao.salvar(data, this);
+                    finish();
+                }catch(Exception e){
+                    Toast.makeText(this, "Ocorreu um erro! Tente novamente! " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                }
 
             }
 
