@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Organizze</string>
+    <string name="intro1_first">Organize suas contas \nde onde estiver</string>
+    <string name="intro1_second">Símples, fácil e grátis de usar</string>
+    <string name="intro2_first">Saiba para onde está indo o seu dinheiro</string>
+    <string name="intro2_second">Categorizando seus lançamentos e vendo \no destino de cada centavo</string>
+    <string name="intro3_first">Nunca mais esqueça de \npagar uma conta</string>
+    <string name="intro3_second">Receba alertas quando quiser</string>
+    <string name="intro4_first">Tudo organizado \nno celular ou computador</string>
+    <string name="intro4_second">Use no smartphone e acessando \no Organizze pelo site</string>
+    <string name="cadastro_first">Crie sua conta grátis</string>
+    <string name="cadastro_second">Junte-se a mais a mais de meio milhão de pessoas e comece já</string>
+    <string name="cadastro_third">Já tenho conta</string>
+    <string name="cadastro_button">CADASTRE-SE</string>
+    <string name="login_texto">Acesse agora</string>
+    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="alert_principalActivity_title">Excluir movimentação da conta</string>
+    <string name="alert_principalActivity_message">Você tem certeza de exluir esse item?</string>
+</resources>
