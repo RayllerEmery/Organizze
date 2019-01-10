@@ -1,14 +1,14 @@
 # Organizze
-A basic finance app made following the instructions of an Android Course.
+Aplicativo de finanças básico, feito com instruções de um curso de Android
 
-This app works using a Firebase Realtime Database and Authentication. You need to config the app on you Firebase.
+O banco do aplicativo é o Firebase, quando também a autenticação. É necessário configurar o mesmo com o app.
 \
 \
 \
-App version observations:
+Observações do app:
 
-* The app version works only if the phone is online.
-* The internal database isn't configure.
+* Está funcionando corretamente apenas se o telefone estiver conectado a internet.
+* Banco de dados internos não está configurado.
 
 ## App link
 
